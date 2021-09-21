@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.toolbar {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: auto auto auto;
+}
+
+.toolbarItem {
+  background-image: linear-gradient(#a1a1a173, #FFFFFF, #a1a1a173);
+  border: black solid 1px;
+}
