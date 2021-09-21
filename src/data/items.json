@@ -1,0 +1,9 @@
+{
+  "weapons": [
+    {
+        "name":"Giant Greatsword",
+        "description": "This sword is as big as an average humanoid but might be a dagger for a giant."
+         
+    }
+]
+}
