@@ -4,7 +4,7 @@ import { Maps } from './pages/Maps/Maps'
 import { Home } from './pages/Home'
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 import './App.css';
-
+//https://react-leaflet.js.org/docs/start-installation/
 function App() {
   return (
     <div className="App">
