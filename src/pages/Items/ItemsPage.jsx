@@ -5,6 +5,7 @@ const itemsJson = require('../../data/items.json')
 export function ItemsPage (props) {
     const [items, setItems] = useState([])
     const [weapons, setWeapons] = useState([])
+    const [weaponsInfo, setWeaponsInfo] = useState([])
 
 
     useEffect( ()=>{
@@ -16,6 +17,7 @@ export function ItemsPage (props) {
         for (let i = 0; i < weaponArray.length; i++) {
             const current = weapons
             current.push(<Weapon info = {weaponArray[i]}/>)
+            setWeaponsInfo(weaponArray[i])
             setWeapons(current)
         }
     }
