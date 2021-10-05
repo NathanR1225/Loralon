@@ -4,34 +4,38 @@ export function Weapon (props) {
     const [info, setInfo] = useState([])
 
     useEffect( ()=>{
-        console.log(props) 
+        // console.log(props) 
         setInfo(props.info)       
     },[])
 
     const formatPrice = moneyObj =>{
-        return ` ${moneyObj.gold} Gold ${moneyObj.silver} Silver ${moneyObj.copper} Copper`
+        console.log(moneyObj);
+        const gold = moneyObj.gold !== 0 ? `${moneyObj.gold} GP `: ''
+        const silver = moneyObj.silver !== 0 ? `${moneyObj.silver} SP `: ''
+        const copper = moneyObj.copper !== 0 ? `${moneyObj.copper} CP `: ''
+        return ` ${gold} ${silver} ${copper}`
     }
 
     return (
         <div>
-            <div style = {{backgroundImage: "linear-gradient(#e1ad6d, #ffec9e, #e1ad6d)"}}>
+            <div className="itemHeader" >
                 {info.name}
             </div>
             <div style ={{backgroundColor: "#ffdd8a"}}>
+{typeof info.price !== 'undefined'?       <div>
+<span className="boldText">Price:</span> {formatPrice(info.price)}
+                </div> : ""}
                 <div>
-                    Price: {formatPrice(info.price)}
+                    <span className="boldText">Damage:</span> {info.damage} {info.damageType}
                 </div>
                 <div>
-                    Damage: {info.damage} {info.damageType}
+                <span className="boldText">Proficiency Requirements:</span> {info.proficiencyRequirements}
                 </div>
                 <div>
-                    Proficiency Requirements: {info.proficiencyRequirements}
-                </div>
-                <div>
-                    Properties: {info.properties}
+                <span className="boldText">Properties:</span> {info.properties}
                 </div> 
                 <div>
-                    Weight:{info.weight}LB
+                <span className="boldText">Weight:</span>{info.weight}LB
                 </div>
 
                 <div style ={{backgroundColor: "#ffec9e", margin: " 20px 8% 20px 8%", borderRadius:"5px", padding: "20px"}}>

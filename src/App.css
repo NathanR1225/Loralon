@@ -52,3 +52,14 @@
   background-image: linear-gradient(#a1a1a173, #FFFFFF, #a1a1a173);
   border: black solid 1px;
 }
+
+.boldText {
+  font-weight: bold;
+}
+
+.itemHeader{
+  background-image: linear-gradient(#e1ad6d, #ffec9e, #e1ad6d);
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  font-size: 20px;
+}
