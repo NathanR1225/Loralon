@@ -6,6 +6,7 @@
         "price" : {"gold":1000, "silver":0, "copper":0},
         "damage": "3d10 +str",
         "damageType":"slashing",
+        "weaponType":"melee",
         "proficiencyRequirements":"have a str of at least 20, be proficient in greatswords, be of medium or larger size",
         "properties":["Two Handed", "Extremely Heavy", "Long Blade"],
         "weight": 50         

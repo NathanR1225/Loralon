@@ -25,17 +25,20 @@ export function Weapon (props) {
 {typeof info.price !== 'undefined'?       <div>
 <span className="boldText">Price:</span> {formatPrice(info.price)}
                 </div> : ""}
-                <div>
+                <div className="itemDetail">
                     <span className="boldText">Damage:</span> {info.damage} {info.damageType}
                 </div>
-                <div>
-                <span className="boldText">Proficiency Requirements:</span> {info.proficiencyRequirements}
+                <div className="itemDetail">
+                    <span className="boldText">Proficiency Requirements:</span> {info.proficiencyRequirements}
                 </div>
-                <div>
-                <span className="boldText">Properties:</span> {info.properties}
+                <div className="itemDetail">
+                    <span className="boldText">Properties:</span> {info.properties}
                 </div> 
-                <div>
-                <span className="boldText">Weight:</span>{info.weight}LB
+                <div className="itemDetail">
+                  <span className="boldText">Weapon Type:</span>{info.weaponType}
+                </div>
+                <div className="itemDetail">
+                    <span className="boldText">Weight:</span>{info.weight}LB
                 </div>
 
                 <div style ={{backgroundColor: "#ffec9e", margin: " 20px 8% 20px 8%", borderRadius:"5px", padding: "20px"}}>
