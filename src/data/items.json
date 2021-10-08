@@ -8,8 +8,61 @@
         "damageType":"slashing",
         "weaponType":"melee",
         "proficiencyRequirements":"have a str of at least 20, be proficient in greatswords, be of medium or larger size",
+        "tags":["weapon", "melee","giant"],
         "properties":["Two Handed", "Extremely Heavy", "Long Blade"],
         "weight": 50         
+    },
+    {
+        "name":"Smugglers Deck: Number cards",
+        "description": "This card looks like standard playing card but if you squeeze the middle of the card the edges become razor sharp or turn back to normal. This weapon is not considered a legal weapon. The cards fall to the ground after hitting the target and then can be recovered unless destroyed or caught on fire. The card is covered in wax making it easy to clean.",
+        "price" : {"gold":2, "silver":0, "copper":0},
+        "damage": "1d4 +dex",
+        "damageType":"slashing",
+        "weaponType":"ranged",
+        "proficiencyRequirements":"at least one type of  playing cards, sleight of hand, simple weapons",
+        "tags":["weapon", "ranged","smuggler"],
+        "properties":["Collection", "Extremely Heavy", "double-edged melee","indistinguishable","flammable", "Thrown"],
+        "range":[30,60],
+        "weight": 0.001         
+    },
+    {
+        "name":"Smugglers Deck: Face cards",
+        "description": "This card looks like standard playing card but if you squeeze the middle of the card the edges become razor sharp or turn back to normal. This weapon is not considered a legal weapon. The cards fall to the ground after hitting the target and then can be recovered unless destroyed or caught on fire. The card is covered in wax making it easy to clean.",
+        "price" : {"gold":10, "silver":0, "copper":0},
+        "damage": "1d6 +dex",
+        "damageType":"slashing",
+        "weaponType":"ranged",
+        "proficiencyRequirements":"at least one type of  playing cards, sleight of hand, simple weapons",
+        "tags":["weapon", "ranged","smuggler"],
+        "properties":["Collection", "Extremely Heavy", "double-edged melee","indistinguishable","flammable", "Thrown"],
+        "range":[30,60],
+        "weight": 0.001         
+    },
+    {
+        "name":"Smugglers Deck: Aces",
+        "description": "This card looks like standard playing card but if you squeeze the middle of the card the edges become razor sharp or turn back to normal. This weapon is not considered a legal weapon. The cards fall to the ground after hitting the target and then can be recovered unless destroyed or caught on fire. The card is covered in wax making it easy to clean.",
+        "price" : {"gold":25, "silver":0, "copper":0},
+        "damage": "1d8 +dex",
+        "damageType":"slashing",
+        "weaponType":"ranged",
+        "proficiencyRequirements":"at least one type of  playing cards, sleight of hand, simple weapons",
+        "tags":["weapon", "ranged","smuggler"],
+        "properties":["Collection", "Extremely Heavy", "double-edged melee","indistinguishable","flammable", "Thrown"],
+        "range":[30,60],
+        "weight": 0.001         
+    },
+    {
+        "name":"Smugglers Deck: Jokers",
+        "description": "This card looks like standard playing card but if you squeeze the middle of the card the edges become razor sharp or turn back to normal. This weapon is not considered a legal weapon. The cards fall to the ground after hitting the target and then can be recovered unless destroyed or caught on fire. The card is covered in wax making it easy to clean.",
+        "price" : {"gold":50, "silver":0, "copper":0},
+        "damage": "1d10 +dex",
+        "damageType":"slashing",
+        "weaponType":"ranged",
+        "proficiencyRequirements":"at least one type of  playing cards, sleight of hand, simple weapons",
+        "tags":["weapon", "ranged","smuggler"],
+        "properties":["Collection", "Extremely Heavy", "double-edged melee","indistinguishable","flammable", "Thrown"],
+        "range":[30,60],
+        "weight": 0.001         
     }
 ]
 }
